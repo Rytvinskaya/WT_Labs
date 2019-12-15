@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"epam.webtech.model.user","l":"User"},{"p":"epam.webtech.model.user","l":"UserRepository"},{"p":"epam.webtech.model.user","l":"UserService"},{"p":"epam.webtech.model.user","l":"XmlUserRepository"}]

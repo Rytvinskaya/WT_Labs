@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="HorseRacingData">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Users">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="user" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="bank" type="xsd:int"/>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="passwordHash" type="xsd:string"/>
+                                        <xsd:element name="authorityLvl" type="xsd:int"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Horses">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="horse" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="winsCounter" type="xsd:int"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Races">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="race" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="horsesNames">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="horsesNames" type="xsd:string" maxOccurs="unbounded"/>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="winnerHorseName" type="xsd:string"/>
+                                        <xsd:element name="status" type="xsd:string"/>
+                                        <xsd:element name="date" type="xsd:string"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Bets">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="bet" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="amount" type="xsd:float"/>
+                                        <xsd:element name="raceId" type="xsd:int"/>
+                                        <xsd:element name="horseName" type="xsd:string"/>
+                                        <xsd:element name="userName" type="xsd:string"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

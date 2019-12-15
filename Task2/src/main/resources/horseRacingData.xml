@@ -1,0 +1,89 @@
+<HorseRacingData>
+    <Users>
+        <user id="1">
+            <bank>8500</bank>
+            <name>TestUser2</name>
+            <passwordHash>73618f53dac218f51a6a549a50688929f851488a</passwordHash>
+            <authorityLvl>1</authorityLvl>
+        </user>
+        <user id="2">
+            <bank>4000</bank>
+            <name>TestUser1</name>
+            <passwordHash>d4735b864ee757bfd9fac300787a65b07e40fc9e</passwordHash>
+            <authorityLvl>1</authorityLvl>
+        </user>
+        <user id="3">
+            <bank>1500</bank>
+            <name>Admin</name>
+            <passwordHash>8be3c943b1609fffbfc51aad666d0a04adf83c9d</passwordHash>
+            <authorityLvl>2</authorityLvl>
+        </user>
+    </Users>
+    <Horses>
+        <horse id="1">
+            <name>Horse3</name>
+            <winsCounter>3</winsCounter>
+        </horse>
+        <horse id="2">
+            <name>Horse1</name>
+            <winsCounter>2</winsCounter>
+        </horse>
+        <horse id="3">
+            <name>Horse2</name>
+            <winsCounter>1</winsCounter>
+        </horse>
+    </Horses>
+    <Races>
+        <race id="1">
+            <horsesNames>
+                <horsesNames>Horse1</horsesNames>
+                <horsesNames>Horse2</horsesNames>
+                <horsesNames>Horse3</horsesNames>
+            </horsesNames>
+            <winnerHorseName/>
+            <status>WAITING</status>
+            <date>1571821200000</date>
+        </race>
+        <race id="2">
+            <horsesNames>
+                <horsesNames>Horse3</horsesNames>
+                <horsesNames>Horse2</horsesNames>
+            </horsesNames>
+            <winnerHorseName>Horse3</winnerHorseName>
+            <status>WAITING</status>
+            <date>1572861600000</date>
+        </race>
+    </Races>
+    <Bets>
+        <bet id="1">
+            <amount>1500.0</amount>
+            <raceId>1</raceId>
+            <horseName>Horse1</horseName>
+            <userName>TestUser1</userName>
+        </bet>
+        <bet id="2">
+            <amount>7000.0</amount>
+            <raceId>2</raceId>
+            <horseName>Horse3</horseName>
+            <userName>Admin</userName>
+        </bet>
+        <bet id="3">
+            <amount>2000.0</amount>
+            <raceId>1</raceId>
+            <horseName>Horse3</horseName>
+            <userName>Admin</userName>
+        </bet>
+        <bet id="4">
+            <amount>3000.0</amount>
+            <raceId>2</raceId>
+            <horseName>Horse2</horseName>
+            <userName>TestUser2</userName>
+        </bet>
+        <bet id="5">
+            <amount>3000.0</amount>
+            <raceId>1</raceId>
+            <horseName>Horse1</horseName>
+            <userName>TestUser2</userName>
+        </bet>
+    </Bets>
+</HorseRacingData>

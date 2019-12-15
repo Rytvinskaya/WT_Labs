@@ -1,0 +1,23 @@
+<Values>
+    <item>
+        <id>3</id>
+        <bank>10000</bank>
+        <name>TestUser2</name>
+        <passwordHash>73618f53dac218f51a6a549a50688929f851488a</passwordHash>
+        <authorityLvl>1</authorityLvl>
+    </item>
+    <item>
+        <id>2</id>
+        <bank>10000</bank>
+        <name>TestUser1</name>
+        <passwordHash>d4735b864ee757bfd9fac300787a65b07e40fc9e</passwordHash>
+        <authorityLvl>1</authorityLvl>
+    </item>
+    <item>
+        <id>1</id>
+        <bank>10000</bank>
+        <name>Admin</name>
+        <passwordHash>8be3c943b1609fffbfc51aad666d0a04adf83c9d</passwordHash>
+        <authorityLvl>2</authorityLvl>
+    </item>
+</Values>

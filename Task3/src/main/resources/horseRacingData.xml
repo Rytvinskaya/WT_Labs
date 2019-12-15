@@ -1,0 +1,89 @@
+<Horse-racing-data>
+    <Users>
+        <user id="1">
+            <user-bank>8500</user-bank>
+            <user-name>TestUser2</user-name>
+            <user-password-hash>73618f53dac218f51a6a549a50688929f851488a</user-password-hash>
+            <user-authority-lvl>1</user-authority-lvl>
+        </user>
+        <user id="2">
+            <user-bank>4000</user-bank>
+            <user-name>TestUser1</user-name>
+            <user-password-hash>d4735b864ee757bfd9fac300787a65b07e40fc9e</user-password-hash>
+            <user-authority-lvl>1</user-authority-lvl>
+        </user>
+        <user id="3">
+            <user-bank>1500</user-bank>
+            <user-name>Admin</user-name>
+            <user-password-hash>8be3c943b1609fffbfc51aad666d0a04adf83c9d</user-password-hash>
+            <user-authority-lvl>2</user-authority-lvl>
+        </user>
+    </Users>
+    <Horses>
+        <horse id="1">
+            <horse-name>Horse3</horse-name>
+            <horse-wins-count>3</horse-wins-count>
+        </horse>
+        <horse id="2">
+            <horse-name>Horse1</horse-name>
+            <horse-wins-count>2</horse-wins-count>
+        </horse>
+        <horse id="3">
+            <horse-name>Horse2</horse-name>
+            <horse-wins-count>1</horse-wins-count>
+        </horse>
+    </Horses>
+    <Races>
+        <race id="1">
+            <race-horse-names>
+                <race-horse-name>Horse1</race-horse-name>
+                <race-horse-name>Horse2</race-horse-name>
+                <race-horse-name>Horse3</race-horse-name>
+            </race-horse-names>
+            <race-winner-horse-name/>
+            <race-status>WAITING</race-status>
+            <race-date>1999-08-30</race-date>
+        </race>
+        <race id="2">
+            <race-horse-names>
+                <race-horse-name>Horse3</race-horse-name>
+                <race-horse-name>Horse2</race-horse-name>
+            </race-horse-names>
+            <race-winner-horse-name>Horse3</race-winner-horse-name>
+            <race-status>FINISHED</race-status>
+            <race-date>1999-08-31</race-date>
+        </race>
+    </Races>
+    <Bets>
+        <bet id="1">
+            <bet-amount>1500</bet-amount>
+            <bet-race-id>1</bet-race-id>
+            <bet-horse-name>Horse1</bet-horse-name>
+            <bet-user-name>TestUser1</bet-user-name>
+        </bet>
+        <bet id="2">
+            <bet-amount>7000</bet-amount>
+            <bet-race-id>2</bet-race-id>
+            <bet-horse-name>Horse3</bet-horse-name>
+            <bet-user-name>Admin</bet-user-name>
+        </bet>
+        <bet id="3">
+            <bet-amount>2000</bet-amount>
+            <bet-race-id>1</bet-race-id>
+            <bet-horse-name>Horse3</bet-horse-name>
+            <bet-user-name>Admin</bet-user-name>
+        </bet>
+        <bet id="4">
+            <bet-amount>3000</bet-amount>
+            <bet-race-id>2</bet-race-id>
+            <bet-horse-name>Horse2</bet-horse-name>
+            <bet-user-name>TestUser2</bet-user-name>
+        </bet>
+        <bet id="5">
+            <bet-amount>3000</bet-amount>
+            <bet-race-id>1</bet-race-id>
+            <bet-horse-name>Horse1</bet-horse-name>
+            <bet-user-name>TestUser2</bet-user-name>
+        </bet>
+    </Bets>
+</Horse-racing-data>
